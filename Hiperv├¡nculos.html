@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <title>Hipervínculos</title>
+    <meta name="description" content="Construye Aplicaciones Web: material de estudio sobre HTML, CSS y JavaScript.">
+    <script src="js/app.js" defer></script>
+</head>
+
+<body>
+<a class="enlace-salto" href="#contenido">Saltar al contenido</a>
+<header class="encabezado">
+<nav class="barra-navegacion" aria-label="Navegación principal">
+  <button class="boton-menu" type="button" aria-expanded="false" aria-controls="menu">☰ Menú</button>
+  <div class="enlaces" id="menu">
+    <a href="index.html">Inicio</a>
+    <a href="Temas.html">Temario</a>
+    <a href="JS.html">JavaScript</a>
+    <a href="Requisitos.html">Requisitos</a>
+  </div>
+</nav>
+<h1>HIPERVÍNCULOS</h1>
+</header>
+
+<main id="contenido" class="contenedor">
+<section>
+<h2>¿Qué son?</h2>
+
+    <p>
+        Los hipervínculos son enlaces que permiten navegar hacia
+        otras páginas, documentos o sitios de Internet.
+    </p>
+</section>
+
+<section>
+<h2>Tipos</h2>
+
+    <ul>
+        <li>Enlaces internos.</li>
+        <li>Enlaces externos.</li>
+        <li>Enlaces hacia otras páginas.</li>
+        <li>Imágenes utilizadas como enlaces.</li>
+    </ul>
+</section>
+
+<section>
+<h2>Ejemplos</h2>
+
+    <div class="tabla-scroll"><table>
+
+        <tr>
+            <th scope="col">Tipo</th>
+            <th scope="col">Ejemplo</th>
+        </tr>
+
+        <tr>
+            <td>Página interna</td>
+            <td>
+                <a href="index.html">Ir al inicio</a>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Google</td>
+            <td>
+                <a href="https://www.google.com" target="_blank">
+                    Google
+                </a>
+            </td>
+        </tr>
+
+        <tr>
+            <td>YouTube</td>
+            <td>
+                <a href="https://www.youtube.com" target="_blank">
+                    YouTube
+                </a>
+            </td>
+        </tr>
+
+    </table></div>
+</section>
+
+<section>
+<h2>Imagen como enlace</h2>
+
+    <a href="https://www.google.com" target="_blank">
+        <img src="img/1.jpg" alt="Ilustración de aplicaciones web; enlaza a Google" width="200" height="140" loading="lazy">
+    </a>
+</section>
+
+<nav class="tarjeta navegacion-pagina" aria-label="Navegación entre temas">
+<p><a href="Temas.html">Regresar a Temas</a></p>
+<p><a href="TABLAS.html">Regresar a Tablas</a></p>
+<p><a href="Formularios.html">Siguiente: Formularios</a></p>
+<p><a href="index.html">Regresar al inicio</a> · <a href="Temas.html">Ver todos los temas</a></p>
+</nav>
+</main>
+
+<footer class="pie">
+  <p>Construye Aplicaciones Web · Material de estudio</p>
+  <p><a href="index.html">Inicio</a> · <a href="Temas.html">Temario</a> · <a href="Requisitos.html">Requisitos</a></p>
+</footer>
+</body>
+</html>

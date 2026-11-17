@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="favicon.ico">
+<link rel="stylesheet" href="css/estilos.css">
+<title>3. Tipos de operadores</title>
+    <meta name="description" content="Construye Aplicaciones Web: material de estudio sobre HTML, CSS y JavaScript.">
+    <script src="js/app.js" defer></script>
+</head>
+<body>
+<a class="enlace-salto" href="#contenido">Saltar al contenido</a>
+<header class="encabezado">
+<nav class="barra-navegacion" aria-label="Navegación principal">
+  <button class="boton-menu" type="button" aria-expanded="false" aria-controls="menu">☰ Menú</button>
+  <div class="enlaces" id="menu">
+    <a href="index.html">Inicio</a>
+    <a href="Temas.html">Temario</a>
+    <a href="JS2.html">Anterior</a>
+    <a href="JS4.html">Siguiente</a>
+    <a href="JS.html">JavaScript</a>
+    <a href="Requisitos.html">Requisitos</a>
+  </div>
+</nav>
+<h1>3. Tipos de operadores</h1>
+</header>
+
+<main id="contenido" class="contenedor">
+<section class="tarjeta"><h2>¿Qué es?</h2><p>Los operadores son símbolos o palabras que permiten realizar operaciones con uno o más valores, llamados operandos. Se utilizan para calcular, comparar, asignar y combinar condiciones.</p><h2>¿Para qué sirve?</h2><p>Los operadores ayudan a resolver operaciones matemáticas y a tomar decisiones dentro de un programa.</p></section>
+<h2>Elementos y tipos principales</h2>
+<div class="tabla-scroll"><table><tr><th scope="col">Elemento o tipo</th><th scope="col">Definición y uso</th></tr><tr><td><strong>Aritméticos</strong></td><td>+ suma; - resta; * multiplicación; / división; % residuo; ** potencia; ++ aumenta uno; -- disminuye uno.</td></tr><tr><td><strong>Asignación</strong></td><td>= asigna; += suma y asigna; -= resta y asigna; *= multiplica y asigna; /= divide y asigna.</td></tr><tr><td><strong>Comparación</strong></td><td>=== igualdad estricta; !== diferencia estricta; &gt; mayor; &lt; menor; &gt;= mayor o igual; &lt;= menor o igual. Devuelven true o false.</td></tr><tr><td><strong>Lógicos</strong></td><td>&amp;&amp; significa Y; || significa O; ! significa negación. Se usan para combinar condiciones.</td></tr><tr><td><strong>Concatenación</strong></td><td>El operador + también une cadenas de texto.</td></tr><tr><td><strong>Condicional</strong></td><td>?: permite elegir un valor según una condición.</td></tr></table></div>
+<h2>Ejemplo de código</h2><p>Este ejemplo muestra cómo se utiliza el tema en JavaScript. Puedes copiarlo y probarlo en un archivo HTML.</p>
+<pre><code>let a = 10;
+let b = 3;
+document.write(&quot;Suma: &quot; + (a + b) + &quot;&lt;br&gt;&quot;);
+document.write(&quot;Residuo: &quot; + (a % b) + &quot;&lt;br&gt;&quot;);
+document.write(&quot;¿a es mayor que b?: &quot; + (a &gt; b) + &quot;&lt;br&gt;&quot;);
+document.write(&quot;¿Ambos son positivos?: &quot; + (a &gt; 0 &amp;&amp; b &gt; 0));</code></pre>
+<h2>Ejemplo interactivo</h2><div class="demo"><label>Número A: <input id="opA" type="number" value="10"></label> <label>Número B: <input id="opB" type="number" value="3"></label><button onclick="let a=Number(document.getElementById('opA').value),b=Number(document.getElementById('opB').value);document.getElementById('opSalida').textContent='Suma: '+(a+b)+' | Resta: '+(a-b)+' | Multiplicación: '+(a*b)+' | División: '+(b!==0?a/b:'no se puede dividir entre cero')">Calcular</button><p id="opSalida"></p></div>
+<div class="nota"><strong>Recuerda:</strong> guarda tus archivos con extensión .html y abre el archivo en un navegador para ejecutar los ejemplos.</div>
+
+<nav class="tarjeta navegacion-pagina" aria-label="Navegación entre temas">
+<p><a href="JS2.html">← Anterior: Tipos de variables</a></p>
+<p><a href="JS4.html">Siguiente: Conversión y estructuras de control →</a></p>
+<p><a href="index.html">Regresar al inicio</a> · <a href="Temas.html">Ver todos los temas</a></p>
+</nav>
+</main>
+
+<footer class="pie">
+  <p>Construye Aplicaciones Web · Material de estudio</p>
+  <p><a href="index.html">Inicio</a> · <a href="Temas.html">Temario</a> · <a href="Requisitos.html">Requisitos</a></p>
+</footer>
+</body>
+</html>

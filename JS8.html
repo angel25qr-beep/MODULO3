@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="favicon.ico">
+<link rel="stylesheet" href="css/estilos.css">
+<title>8. Funciones en JavaScript</title>
+    <meta name="description" content="Construye Aplicaciones Web: material de estudio sobre HTML, CSS y JavaScript.">
+    <script src="js/app.js" defer></script>
+</head>
+<body>
+<a class="enlace-salto" href="#contenido">Saltar al contenido</a>
+<header class="encabezado">
+<nav class="barra-navegacion" aria-label="Navegación principal">
+  <button class="boton-menu" type="button" aria-expanded="false" aria-controls="menu">☰ Menú</button>
+  <div class="enlaces" id="menu">
+    <a href="index.html">Inicio</a>
+    <a href="Temas.html">Temario</a>
+    <a href="JS7.html">Anterior</a>
+    <a href="JS9.html">Siguiente</a>
+    <a href="JS.html">JavaScript</a>
+    <a href="Requisitos.html">Requisitos</a>
+  </div>
+</nav>
+<h1>8. Funciones en JavaScript</h1>
+</header>
+
+<main id="contenido" class="contenedor">
+<section class="tarjeta"><h2>¿Qué es?</h2><p>Una función es un bloque de código diseñado para realizar una tarea. Puede recibir datos mediante parámetros y devolver un resultado con return.</p><h2>¿Para qué sirve?</h2><p>Las funciones permiten reutilizar instrucciones, evitar repeticiones, dividir un problema en partes pequeñas y organizar mejor el programa.</p></section>
+<h2>Elementos y tipos principales</h2>
+<div class="tabla-scroll"><table><tr><th scope="col">Elemento o tipo</th><th scope="col">Definición y uso</th></tr><tr><td><strong>function</strong></td><td>Palabra reservada para declarar una función tradicional.</td></tr><tr><td><strong>Parámetro</strong></td><td>Variable escrita en la definición que recibe un dato.</td></tr><tr><td><strong>Argumento</strong></td><td>Valor concreto que se envía al llamar la función.</td></tr><tr><td><strong>return</strong></td><td>Devuelve un resultado y termina la ejecución de la función.</td></tr><tr><td><strong>Llamada</strong></td><td>Instrucción que ejecuta la función usando su nombre y paréntesis.</td></tr></table></div>
+<h2>Ejemplo de código</h2><p>Este ejemplo muestra cómo se utiliza el tema en JavaScript. Puedes copiarlo y probarlo en un archivo HTML.</p>
+<pre><code>function sumar(numero1, numero2) {
+    return numero1 + numero2;
+}
+
+let resultado = sumar(8, 5);
+document.write(&quot;El resultado es: &quot; + resultado);</code></pre>
+<h2>Ejemplo interactivo</h2><div class="demo"><label>Primer número: <input id="funA" type="number" value="8"></label> <label>Segundo número: <input id="funB" type="number" value="5"></label><button onclick="function sumar(a,b){return a+b}document.getElementById('funSalida').textContent='Resultado de la función: '+sumar(Number(document.getElementById('funA').value),Number(document.getElementById('funB').value))">Llamar función</button><p id="funSalida"></p></div>
+<div class="nota"><strong>Recuerda:</strong> guarda tus archivos con extensión .html y abre el archivo en un navegador para ejecutar los ejemplos.</div>
+
+<nav class="tarjeta navegacion-pagina" aria-label="Navegación entre temas">
+<p><a href="JS7.html">← Anterior: Método DOM</a></p>
+<p><a href="JS9.html">Siguiente: Tipos de funciones →</a></p>
+<p><a href="index.html">Regresar al inicio</a> · <a href="Temas.html">Ver todos los temas</a></p>
+</nav>
+</main>
+
+<footer class="pie">
+  <p>Construye Aplicaciones Web · Material de estudio</p>
+  <p><a href="index.html">Inicio</a> · <a href="Temas.html">Temario</a> · <a href="Requisitos.html">Requisitos</a></p>
+</footer>
+</body>
+</html>

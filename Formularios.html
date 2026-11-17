@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Construye Aplicaciones Web: material de estudio sobre HTML, CSS y JavaScript.">
+
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/app.js" defer></script>
+
+    <title>Formularios</title>
+</head>
+
+<body>
+<a class="enlace-salto" href="#contenido">Saltar al contenido</a>
+<header class="encabezado">
+<nav class="barra-navegacion" aria-label="Navegación principal">
+  <button class="boton-menu" type="button" aria-expanded="false" aria-controls="menu">☰ Menú</button>
+  <div class="enlaces" id="menu">
+    <a href="index.html">Inicio</a>
+    <a href="Temas.html">Temario</a>
+    <a href="JS.html">JavaScript</a>
+    <a href="Requisitos.html">Requisitos</a>
+  </div>
+</nav>
+<h1>FORMULARIOS EN HTML</h1>
+</header>
+
+<main id="contenido" class="contenedor">
+<section>
+<h2>¿Qué es un formulario?</h2>
+<p>
+    Un formulario sirve para ingresar información en una página web,
+    como el nombre, la edad o el correo electrónico.
+</p>
+</section>
+
+<section>
+<h2>Ejemplo de formulario</h2>
+<p>Completa los datos. Si falta algo, la página te mostrará un mensaje claro; si todo está bien, confirmará el envío.</p>
+
+<form id="registro" data-validar novalidate>
+    <fieldset>
+        <legend>Datos personales</legend>
+        <div class="campos-fila">
+            <div class="campo">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required minlength="2" maxlength="40"
+                       pattern="[A-Za-zÁÉÍÓÚÜÑáéíóúüñ ]{2,40}" data-mensaje="Escribe solo letras y espacios."
+                       autocomplete="given-name" aria-describedby="nombre-error">
+                <p class="error-campo" id="nombre-error"></p>
+            </div>
+            <div class="campo">
+                <label for="apellido">Apellido</label>
+                <input type="text" id="apellido" name="apellido" required minlength="2" maxlength="40"
+                       pattern="[A-Za-zÁÉÍÓÚÜÑáéíóúüñ ]{2,40}" data-mensaje="Escribe solo letras y espacios."
+                       autocomplete="family-name" aria-describedby="apellido-error">
+                <p class="error-campo" id="apellido-error"></p>
+            </div>
+            <div class="campo">
+                <label for="edad">Edad</label>
+                <input type="number" id="edad" name="edad" required min="12" max="99" inputmode="numeric"
+                       aria-describedby="edad-error">
+                <p class="error-campo" id="edad-error"></p>
+            </div>
+            <div class="campo">
+                <label for="correo">Correo electrónico</label>
+                <input type="email" id="correo" name="correo" required autocomplete="email"
+                       placeholder="nombre@ejemplo.com" aria-describedby="correo-error">
+                <p class="error-campo" id="correo-error"></p>
+            </div>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>Información académica</legend>
+        <div class="campo">
+            <label for="especialidad">Especialidad</label>
+            <select id="especialidad" name="especialidad" required aria-describedby="especialidad-error">
+                <option value="">Selecciona una opción</option>
+                <option>Programación</option>
+                <option>Ciberseguridad</option>
+                <option>Programación y Ciberseguridad</option>
+                <option>Otra</option>
+            </select>
+            <p class="error-campo" id="especialidad-error"></p>
+        </div>
+        <div class="campo">
+            <span class="grupo-etiqueta" id="etiqueta-turno">Turno</span>
+            <div role="radiogroup" aria-labelledby="etiqueta-turno">
+                <label class="opcion"><input type="radio" name="turno" value="Matutino" checked> Matutino</label>
+                <label class="opcion"><input type="radio" name="turno" value="Vespertino"> Vespertino</label>
+            </div>
+        </div>
+        <div class="campo">
+            <span class="grupo-etiqueta" id="etiqueta-intereses">Temas de interés</span>
+            <div role="group" aria-labelledby="etiqueta-intereses">
+                <label class="opcion"><input type="checkbox" name="intereses" value="HTML"> HTML</label>
+                <label class="opcion"><input type="checkbox" name="intereses" value="CSS"> CSS</label>
+                <label class="opcion"><input type="checkbox" name="intereses" value="JavaScript"> JavaScript</label>
+            </div>
+        </div>
+    </fieldset>
+
+    <div class="campo">
+        <label for="comentarios">Comentarios</label>
+        <textarea id="comentarios" name="comentarios" rows="4" maxlength="300"
+                  aria-describedby="comentarios-ayuda"></textarea>
+        <small id="comentarios-ayuda">Opcional. <span class="contador">0 / 300</span></small>
+    </div>
+
+    <div class="campo">
+        <label class="opcion"><input type="checkbox" id="terminos" name="terminos" required aria-describedby="terminos-error"> Confirmo que mis datos son correctos</label>
+        <p class="error-campo" id="terminos-error"></p>
+    </div>
+
+    <div class="acciones">
+        <input type="submit" value="Enviar formulario">
+        <input type="reset" value="Limpiar">
+    </div>
+
+    <div class="zona-alerta" aria-live="polite"></div>
+</form>
+</section>
+
+<section>
+<h2>Características</h2>
+<ul>
+    <li>Permiten escribir información.</li>
+    <li>Organizan los datos del usuario.</li>
+    <li>Se utilizan en páginas web.</li>
+    <li>Pueden validarse antes de enviarse, con HTML y con JavaScript.</li>
+</ul>
+</section>
+
+<section>
+<h2>Elementos de un formulario</h2>
+<div class="tabla-scroll">
+<table>
+    <thead>
+        <tr><th scope="col">Elemento</th><th scope="col">Función</th></tr>
+    </thead>
+    <tbody>
+        <tr><td>label</td><td>Describe un campo y mejora la accesibilidad.</td></tr>
+        <tr><td>input</td><td>Recibe texto, números, correos, casillas y botones.</td></tr>
+        <tr><td>select</td><td>Permite elegir una opción de una lista.</td></tr>
+        <tr><td>textarea</td><td>Recibe textos largos.</td></tr>
+        <tr><td>fieldset y legend</td><td>Agrupan campos relacionados con un título.</td></tr>
+    </tbody>
+</table>
+</div>
+</section>
+
+<section>
+<h2>GET y POST</h2>
+<div class="tabla-scroll">
+<table>
+    <thead>
+        <tr><th scope="col">Método</th><th scope="col">Función</th></tr>
+    </thead>
+    <tbody>
+        <tr><td>GET</td><td>Envía datos mediante la dirección web.</td></tr>
+        <tr><td>POST</td><td>Envía datos dentro de una solicitud.</td></tr>
+    </tbody>
+</table>
+</div>
+</section>
+
+<nav class="tarjeta navegacion-pagina" aria-label="Navegación entre temas">
+<p><a href="Hipervínculos.html">Regresar a Hipervínculos</a></p>
+<p><a href="Temas2.html">Continuar a Otros temas</a></p>
+<p><a href="Temas.html">Regresar a Temas</a></p>
+<p><a href="index.html">Regresar al inicio</a> · <a href="Temas.html">Ver todos los temas</a></p>
+</nav>
+</main>
+
+<footer class="pie">
+  <p>Construye Aplicaciones Web · Material de estudio</p>
+  <p><a href="index.html">Inicio</a> · <a href="Temas.html">Temario</a> · <a href="Requisitos.html">Requisitos</a></p>
+</footer>
+</body>
+</html>

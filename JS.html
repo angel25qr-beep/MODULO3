@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="favicon.ico">
+<link rel="stylesheet" href="css/estilos.css">
+<title>JAVASCRIPT 1 · INTRODUCCIÓN</title>
+    <meta name="description" content="Construye Aplicaciones Web: material de estudio sobre HTML, CSS y JavaScript.">
+    <script src="js/app.js" defer></script>
+</head>
+<body>
+<a class="enlace-salto" href="#contenido">Saltar al contenido</a>
+<header class="encabezado">
+<nav class="barra-navegacion" aria-label="Navegación principal">
+  <button class="boton-menu" type="button" aria-expanded="false" aria-controls="menu">☰ Menú</button>
+  <div class="enlaces" id="menu">
+    <a href="index.html">Inicio</a>
+    <a href="Temas.html">Temario</a>
+    <a href="CSS.html">Anterior</a>
+    <a href="JS2.html">Siguiente</a>
+    <a href="JS.html" aria-current="page">JavaScript</a>
+    <a href="Requisitos.html">Requisitos</a>
+  </div>
+</nav>
+<h1>JAVASCRIPT 1 · INTRODUCCIÓN</h1>
+</header>
+
+<main id="contenido" class="contenedor">
+<section class="tarjeta"><h2>¿Qué es JavaScript?</h2><p>JavaScript es un lenguaje de programación que permite crear comportamiento e interactividad en páginas web. Se ejecuta en el navegador y también puede utilizarse en otros entornos, como servidores.</p>
+<h2>¿Para qué sirve?</h2><ul><li>Responder a clics y acciones del usuario.</li><li>Validar formularios antes de enviarlos.</li><li>Realizar cálculos y procesar datos.</li><li>Cambiar textos, imágenes y estilos.</li><li>Crear menús, juegos y aplicaciones web.</li></ul></section>
+<h2>HTML, CSS y JavaScript</h2><div class="tabla-scroll"><table><tr><th scope="col">Tecnología</th><th scope="col">Función</th><th scope="col">Ejemplo</th></tr><tr><td>HTML</td><td>Estructura el contenido.</td><td>Títulos, párrafos y botones.</td></tr><tr><td>CSS</td><td>Da presentación y diseño.</td><td>Colores, tamaños y espacios.</td></tr><tr><td>JavaScript</td><td>Agrega comportamiento.</td><td>Mostrar un mensaje al pulsar un botón.</td></tr></table></div>
+<h2>Características principales</h2><ol><li>Es dinámico: el tipo de dato se determina durante la ejecución.</li><li>Es sensible a mayúsculas y minúsculas.</li><li>Permite programación orientada a objetos y funcional.</li><li>Puede manipular el DOM para modificar la página.</li><li>Cuenta con operadores, estructuras de control y funciones.</li></ol>
+<h2>Primer ejemplo</h2><p>El siguiente código declara variables y muestra un mensaje. Puedes probarlo con el botón.</p>
+<div class="demo"><label>Escribe tu nombre: <input id="nombreJS" value="Ángel"></label> <button onclick="document.getElementById('salidaJS').textContent='Hola, '+document.getElementById('nombreJS').value+'! Bienvenido a JavaScript.'">Probar código</button><p id="salidaJS">El resultado aparecerá aquí.</p></div>
+<pre><code>let nombre = "Ángel";
+document.write("Hola, " + nombre);</code></pre>
+<h2>Conceptos básicos</h2><div class="tabla-scroll"><table><tr><th scope="col">Concepto</th><th scope="col">Significado</th></tr><tr><td>Instrucción</td><td>Orden que realiza una acción.</td></tr><tr><td>Variable</td><td>Espacio con nombre para guardar un valor.</td></tr><tr><td>Operador</td><td>Símbolo que realiza una operación.</td></tr><tr><td>Función</td><td>Bloque reutilizable de instrucciones.</td></tr><tr><td>Evento</td><td>Acción detectada, como un clic o una tecla.</td></tr></table></div>
+
+<nav class="tarjeta navegacion-pagina" aria-label="Navegación entre temas">
+<p><a href="CSS.html">← Anterior: CSS</a></p>
+<p><a href="JS2.html">Siguiente: Tipos de variables →</a></p>
+<p><a href="index.html">Regresar al inicio</a> · <a href="Temas.html">Ver todos los temas</a></p>
+</nav>
+</main>
+
+<footer class="pie">
+  <p>Construye Aplicaciones Web · Material de estudio</p>
+  <p><a href="index.html">Inicio</a> · <a href="Temas.html">Temario</a> · <a href="Requisitos.html">Requisitos</a></p>
+</footer>
+</body>
+</html>

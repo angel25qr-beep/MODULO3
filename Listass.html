@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <title>Listas</title>
+    <meta name="description" content="Construye Aplicaciones Web: material de estudio sobre HTML, CSS y JavaScript.">
+    <script src="js/app.js" defer></script>
+</head>
+
+<body>
+<a class="enlace-salto" href="#contenido">Saltar al contenido</a>
+<header class="encabezado">
+<nav class="barra-navegacion" aria-label="Navegación principal">
+  <button class="boton-menu" type="button" aria-expanded="false" aria-controls="menu">☰ Menú</button>
+  <div class="enlaces" id="menu">
+    <a href="index.html">Inicio</a>
+    <a href="Temas.html">Temario</a>
+    <a href="JS.html">JavaScript</a>
+    <a href="Requisitos.html">Requisitos</a>
+  </div>
+</nav>
+<h1>LISTAS EN HTML</h1>
+</header>
+
+<main id="contenido" class="contenedor">
+<section>
+<h2>¿Qué son?</h2>
+
+    <p>
+        Las listas permiten organizar información de una manera
+        ordenada y fácil de leer.
+    </p>
+</section>
+
+<section>
+<h2>Tipos de listas</h2>
+
+    <ul>
+        <li>Lista ordenada</li>
+        <li>Lista desordenada</li>
+        <li>Lista de definición</li>
+    </ul>
+</section>
+
+<section>
+<h2>Lista ordenada</h2>
+
+    <ol>
+        <li>Primero</li>
+        <li>Segundo</li>
+        <li>Tercero</li>
+        <li>Cuarto</li>
+    </ol>
+</section>
+
+<section>
+<h2>Lista desordenada</h2>
+
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>PHP</li>
+    </ul>
+</section>
+
+<section>
+<h2>Lista de definición</h2>
+
+    <dl>
+        <dt>HTML</dt>
+        <dd>Sirve para estructurar páginas web.</dd>
+
+        <dt>CSS</dt>
+        <dd>Sirve para dar diseño a las páginas web.</dd>
+    </dl>
+</section>
+
+<section>
+<h2>Ejemplo de organización</h2>
+
+    <div class="tabla-scroll"><table>
+
+        <tr>
+            <th scope="col">Tipo</th>
+            <th scope="col">Etiqueta</th>
+            <th scope="col">Uso</th>
+        </tr>
+
+        <tr>
+            <td>Ordenada</td>
+            <td>ol</td>
+            <td>Cuando importa el orden.</td>
+        </tr>
+
+        <tr>
+            <td>Desordenada</td>
+            <td>ul</td>
+            <td>Cuando no importa el orden.</td>
+        </tr>
+
+        <tr>
+            <td>Elemento</td>
+            <td>li</td>
+            <td>Representa un elemento de una lista.</td>
+        </tr>
+
+        <tr>
+            <td>Definición</td>
+            <td>dl</td>
+            <td>Organiza términos y sus definiciones.</td>
+        </tr>
+
+    </table></div>
+</section>
+
+<section>
+<h2>Lista dentro de otra lista</h2>
+
+    <ul>
+        <li>Desarrollo web
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+            </ul>
+        </li>
+        <li>Programación</li>
+    </ul>
+
+    <br>
+
+    <a href="Temas.html">Regresar a Temas</a>
+<br><br>
+
+<a href="JS.html">Regresar a JavaScript</a>
+<br><br>
+
+<a href="Etiquetas.html">Siguiente: Etiquetas</a>
+</section>
+
+<nav class="tarjeta navegacion-pagina" aria-label="Navegación entre temas">
+<p><a href="index.html">Regresar al inicio</a> · <a href="Temas.html">Ver todos los temas</a></p>
+</nav>
+</main>
+
+<footer class="pie">
+  <p>Construye Aplicaciones Web · Material de estudio</p>
+  <p><a href="index.html">Inicio</a> · <a href="Temas.html">Temario</a> · <a href="Requisitos.html">Requisitos</a></p>
+</footer>
+</body>
+</html>

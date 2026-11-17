@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="favicon.ico">
+<link rel="stylesheet" href="css/estilos.css">
+<title>2. Tipos de variables</title>
+    <meta name="description" content="Construye Aplicaciones Web: material de estudio sobre HTML, CSS y JavaScript.">
+    <script src="js/app.js" defer></script>
+</head>
+<body>
+<a class="enlace-salto" href="#contenido">Saltar al contenido</a>
+<header class="encabezado">
+<nav class="barra-navegacion" aria-label="Navegación principal">
+  <button class="boton-menu" type="button" aria-expanded="false" aria-controls="menu">☰ Menú</button>
+  <div class="enlaces" id="menu">
+    <a href="index.html">Inicio</a>
+    <a href="Temas.html">Temario</a>
+    <a href="JS.html">Anterior</a>
+    <a href="JS3.html">Siguiente</a>
+    <a href="JS.html">JavaScript</a>
+    <a href="Requisitos.html">Requisitos</a>
+  </div>
+</nav>
+<h1>2. Tipos de variables</h1>
+</header>
+
+<main id="contenido" class="contenedor">
+<section class="tarjeta"><h2>¿Qué es?</h2><p>Una variable es un espacio identificado por un nombre donde se guarda un dato que el programa puede utilizar. En JavaScript se declaran principalmente con var, let y const.</p><h2>¿Para qué sirve?</h2><p>Declarar variables permite conservar datos, reutilizarlos, modificarlos cuando corresponda y hacer que los programas sean más claros.</p></section>
+<h2>Elementos y tipos principales</h2>
+<div class="tabla-scroll"><table><tr><th scope="col">Elemento o tipo</th><th scope="col">Definición y uso</th></tr><tr><td><strong>var</strong></td><td>Tiene alcance de función o global y permite redeclarar y reasignar. En código moderno suele evitarse porque su alcance puede causar confusiones.</td></tr><tr><td><strong>let</strong></td><td>Tiene alcance de bloque. Permite cambiar el valor, pero no declarar otra variable con el mismo nombre en el mismo bloque.</td></tr><tr><td><strong>const</strong></td><td>Tiene alcance de bloque y no permite reasignar la variable. Debe recibir un valor al declararse; si guarda un objeto, sus propiedades todavía pueden cambiar.</td></tr></table></div>
+<h2>Ejemplo de código</h2><p>Este ejemplo muestra cómo se utiliza el tema en JavaScript. Puedes copiarlo y probarlo en un archivo HTML.</p>
+<pre><code>let edad = 16;
+edad = 17; // se puede reasignar
+
+const escuela = &quot;CBTIS&quot;;
+// escuela = &quot;Otra&quot;; // produciría un error
+
+var ciudad = &quot;Actopan&quot;;
+document.write(edad + &quot; - &quot; + escuela + &quot; - &quot; + ciudad);</code></pre>
+<h2>Ejemplo interactivo</h2><div class="demo"><label>Valor inicial: <input id="vInicial" value="10" type="number"></label> <button onclick="let dato=Number(document.getElementById('vInicial').value);document.getElementById('vSalida').textContent='let permite reasignar: primero '+dato+' y después '+(dato+1)+'.'">Ejecutar ejemplo</button><p id="vSalida">Aquí aparecerá el resultado.</p></div>
+<div class="nota"><strong>Recuerda:</strong> guarda tus archivos con extensión .html y abre el archivo en un navegador para ejecutar los ejemplos.</div>
+
+<nav class="tarjeta navegacion-pagina" aria-label="Navegación entre temas">
+<p><a href="JS.html">← Anterior: JavaScript: introducción</a></p>
+<p><a href="JS3.html">Siguiente: Tipos de operadores →</a></p>
+<p><a href="index.html">Regresar al inicio</a> · <a href="Temas.html">Ver todos los temas</a></p>
+</nav>
+</main>
+
+<footer class="pie">
+  <p>Construye Aplicaciones Web · Material de estudio</p>
+  <p><a href="index.html">Inicio</a> · <a href="Temas.html">Temario</a> · <a href="Requisitos.html">Requisitos</a></p>
+</footer>
+</body>
+</html>

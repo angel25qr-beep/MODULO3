@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="favicon.ico">
+<link rel="stylesheet" href="css/estilos.css">
+<title>6. Estructura switch</title>
+    <meta name="description" content="Construye Aplicaciones Web: material de estudio sobre HTML, CSS y JavaScript.">
+    <script src="js/app.js" defer></script>
+</head>
+<body>
+<a class="enlace-salto" href="#contenido">Saltar al contenido</a>
+<header class="encabezado">
+<nav class="barra-navegacion" aria-label="Navegación principal">
+  <button class="boton-menu" type="button" aria-expanded="false" aria-controls="menu">☰ Menú</button>
+  <div class="enlaces" id="menu">
+    <a href="index.html">Inicio</a>
+    <a href="Temas.html">Temario</a>
+    <a href="JS5.html">Anterior</a>
+    <a href="JS7.html">Siguiente</a>
+    <a href="JS.html">JavaScript</a>
+    <a href="Requisitos.html">Requisitos</a>
+  </div>
+</nav>
+<h1>6. Estructura switch</h1>
+</header>
+
+<main id="contenido" class="contenedor">
+<section class="tarjeta"><h2>¿Qué es?</h2><p>switch es una estructura de control que compara una expresión con diferentes casos (case). Cuando encuentra una coincidencia, ejecuta las instrucciones de ese caso.</p><h2>¿Para qué sirve?</h2><p>Se utiliza cuando hay varias opciones posibles para una misma variable o expresión, por ejemplo, un menú, los días de la semana o una selección de operaciones.</p></section>
+<h2>Elementos y tipos principales</h2>
+<div class="tabla-scroll"><table><tr><th scope="col">Elemento o tipo</th><th scope="col">Definición y uso</th></tr><tr><td><strong>switch</strong></td><td>Evalúa la expresión una sola vez y busca un caso que coincida.</td></tr><tr><td><strong>case</strong></td><td>Representa una opción posible.</td></tr><tr><td><strong>break</strong></td><td>Termina el switch para evitar que continúe ejecutando los siguientes casos.</td></tr><tr><td><strong>default</strong></td><td>Se ejecuta cuando ningún case coincide; es opcional.</td></tr></table></div>
+<h2>Ejemplo de código</h2><p>Este ejemplo muestra cómo se utiliza el tema en JavaScript. Puedes copiarlo y probarlo en un archivo HTML.</p>
+<pre><code>let dia = 3;
+
+switch (dia) {
+    case 1:
+        document.write(&quot;Lunes&quot;);
+        break;
+    case 2:
+        document.write(&quot;Martes&quot;);
+        break;
+    case 3:
+        document.write(&quot;Miércoles&quot;);
+        break;
+    default:
+        document.write(&quot;Día no válido&quot;);
+}</code></pre>
+<h2>Ejemplo interactivo</h2><div class="demo"><label>Selecciona un día: <select id="diaSwitch"><option value="1">Lunes</option><option value="2">Martes</option><option value="3">Miércoles</option><option value="4">Jueves</option><option value="5">Viernes</option><option value="6">Sábado</option><option value="7">Domingo</option></select></label><button onclick="let d=Number(document.getElementById('diaSwitch').value),r;switch(d){case 1:r='Lunes';break;case 2:r='Martes';break;case 3:r='Miércoles';break;case 4:r='Jueves';break;case 5:r='Viernes';break;case 6:r='Sábado';break;case 7:r='Domingo';break;default:r='No válido'}document.getElementById('switchSalida').textContent='Seleccionaste: '+r">Consultar</button><p id="switchSalida"></p></div>
+<div class="nota"><strong>Recuerda:</strong> guarda tus archivos con extensión .html y abre el archivo en un navegador para ejecutar los ejemplos.</div>
+
+<nav class="tarjeta navegacion-pagina" aria-label="Navegación entre temas">
+<p><a href="JS5.html">← Anterior: JavaScript en HTML</a></p>
+<p><a href="JS7.html">Siguiente: Método DOM →</a></p>
+<p><a href="index.html">Regresar al inicio</a> · <a href="Temas.html">Ver todos los temas</a></p>
+</nav>
+</main>
+
+<footer class="pie">
+  <p>Construye Aplicaciones Web · Material de estudio</p>
+  <p><a href="index.html">Inicio</a> · <a href="Temas.html">Temario</a> · <a href="Requisitos.html">Requisitos</a></p>
+</footer>
+</body>
+</html>

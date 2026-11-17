@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <title>Tablas</title>
+    <meta name="description" content="Construye Aplicaciones Web: material de estudio sobre HTML, CSS y JavaScript.">
+    <script src="js/app.js" defer></script>
+</head>
+
+<body>
+<a class="enlace-salto" href="#contenido">Saltar al contenido</a>
+<header class="encabezado">
+<nav class="barra-navegacion" aria-label="Navegación principal">
+  <button class="boton-menu" type="button" aria-expanded="false" aria-controls="menu">☰ Menú</button>
+  <div class="enlaces" id="menu">
+    <a href="index.html">Inicio</a>
+    <a href="Temas.html">Temario</a>
+    <a href="JS.html">JavaScript</a>
+    <a href="Requisitos.html">Requisitos</a>
+  </div>
+</nav>
+<h1>TABLAS EN HTML</h1>
+</header>
+
+<main id="contenido" class="contenedor">
+<section>
+<h2>¿Qué son?</h2>
+
+    <p>
+        Las tablas permiten organizar información utilizando filas
+        y columnas.
+    </p>
+</section>
+
+<section>
+<h2>Elementos principales</h2>
+
+    <ul>
+        <li>table: crea la tabla.</li>
+        <li>tr: crea una fila.</li>
+        <li>th: crea una celda de encabezado.</li>
+        <li>td: crea una celda de datos.</li>
+        <li>caption: agrega un título a la tabla.</li>
+        <li>thead: agrupa el encabezado.</li>
+        <li>tbody: agrupa los datos.</li>
+        <li>tfoot: agrupa el pie de la tabla.</li>
+    </ul>
+</section>
+
+<section>
+<h2>Ejemplo</h2>
+
+    <div class="tabla-scroll"><table>
+
+        <caption>Lista de alumnos</caption>
+
+        <thead>
+            <tr>
+                <th scope="col">Nombre</th>
+                <th scope="col">Edad</th>
+                <th scope="col">Especialidad</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Ángel</td>
+                <td>16</td>
+                <td>Programación</td>
+            </tr>
+
+            <tr>
+                <td>Alumno 2</td>
+                <td>16</td>
+                <td>Programación</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="3">Total: 2 alumnos</td>
+            </tr>
+        </tfoot>
+
+    </table></div>
+</section>
+
+<section>
+<h2>Características</h2>
+
+    <ol>
+        <li>Organizan información.</li>
+        <li>Utilizan filas y columnas.</li>
+        <li>Pueden tener encabezados.</li>
+        <li>Se pueden modificar mediante CSS.</li>
+        <li>Permiten combinar celdas.</li>
+        <li>Facilitan la comparación de datos.</li>
+    </ol>
+</section>
+
+<section>
+<h2>Otra tabla de ejemplo</h2>
+
+    <div class="tabla-scroll"><table>
+
+        <tr>
+            <th scope="col">Materia</th>
+            <th scope="col">Calificación</th>
+        </tr>
+
+        <tr>
+            <td>HTML</td>
+            <td>9</td>
+        </tr>
+
+        <tr>
+            <td>CSS</td>
+            <td>10</td>
+        </tr>
+
+    </table></div>
+</section>
+
+<nav class="tarjeta navegacion-pagina" aria-label="Navegación entre temas">
+<p><a href="Etiquetas.html">Regresar a Etiquetas</a></p>
+<p><a href="Hipervínculos.html">Siguiente: Hipervínculos</a></p>
+<p><a href="Temas.html">Regresar a Temas</a></p>
+<p><a href="index.html">Regresar al inicio</a> · <a href="Temas.html">Ver todos los temas</a></p>
+</nav>
+</main>
+
+<footer class="pie">
+  <p>Construye Aplicaciones Web · Material de estudio</p>
+  <p><a href="index.html">Inicio</a> · <a href="Temas.html">Temario</a> · <a href="Requisitos.html">Requisitos</a></p>
+</footer>
+</body>
+</html>

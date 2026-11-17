@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="favicon.ico">
+<link rel="stylesheet" href="css/estilos.css">
+<title>9. Tipos de funciones</title>
+    <meta name="description" content="Construye Aplicaciones Web: material de estudio sobre HTML, CSS y JavaScript.">
+    <script src="js/app.js" defer></script>
+</head>
+<body>
+<a class="enlace-salto" href="#contenido">Saltar al contenido</a>
+<header class="encabezado">
+<nav class="barra-navegacion" aria-label="Navegación principal">
+  <button class="boton-menu" type="button" aria-expanded="false" aria-controls="menu">☰ Menú</button>
+  <div class="enlaces" id="menu">
+    <a href="index.html">Inicio</a>
+    <a href="Temas.html">Temario</a>
+    <a href="JS8.html">Anterior</a>
+    <a href="JS10.html">Siguiente</a>
+    <a href="JS.html">JavaScript</a>
+    <a href="Requisitos.html">Requisitos</a>
+  </div>
+</nav>
+<h1>9. Tipos de funciones</h1>
+</header>
+
+<main id="contenido" class="contenedor">
+<section class="tarjeta"><h2>¿Qué es?</h2><p>En JavaScript existen distintas formas de definir funciones. Se pueden declarar con function, guardar en variables como expresiones, escribir como funciones flecha o utilizar funciones anónimas como callbacks.</p><h2>¿Para qué sirve?</h2><p>Conocer las formas de función ayuda a elegir la sintaxis adecuada y a organizar el comportamiento de una aplicación.</p></section>
+<h2>Elementos y tipos principales</h2>
+<div class="tabla-scroll"><table><tr><th scope="col">Elemento o tipo</th><th scope="col">Definición y uso</th></tr><tr><td><strong>Declarada</strong></td><td>Se define con function nombre() {}. Puede llamarse antes de su declaración por el mecanismo de hoisting.</td></tr><tr><td><strong>Expresión</strong></td><td>Se guarda una función en una variable, por ejemplo const saludar = function() {}.</td></tr><tr><td><strong>Flecha</strong></td><td>Se escribe con =&gt;. Es una forma breve y no crea su propio this.</td></tr><tr><td><strong>Anónima</strong></td><td>No tiene nombre propio; puede usarse como argumento o asignarse a una variable.</td></tr><tr><td><strong>Callback</strong></td><td>Función que se pasa a otra función para que sea ejecutada posteriormente.</td></tr><tr><td><strong>Autoinvocada (IIFE)</strong></td><td>Función que se ejecuta inmediatamente después de definirse.</td></tr></table></div>
+<h2>Ejemplo de código</h2><p>Este ejemplo muestra cómo se utiliza el tema en JavaScript. Puedes copiarlo y probarlo en un archivo HTML.</p>
+<pre><code>function tradicional() {
+    return &quot;Función declarada&quot;;
+}
+
+const expresion = function() {
+    return &quot;Función expresión&quot;;
+};
+
+const flecha = () =&gt; &quot;Función flecha&quot;;
+
+document.write(tradicional() + &quot;&lt;br&gt;&quot;);
+document.write(expresion() + &quot;&lt;br&gt;&quot;);
+document.write(flecha());</code></pre>
+<h2>Ejemplo interactivo</h2><div class="demo"><button onclick="const saludoFlecha=()=> 'Hola, esta respuesta viene de una función flecha.';document.getElementById('tiposSalida').textContent=saludoFlecha()">Probar función flecha</button><p id="tiposSalida"></p></div>
+<div class="nota"><strong>Recuerda:</strong> guarda tus archivos con extensión .html y abre el archivo en un navegador para ejecutar los ejemplos.</div>
+
+<nav class="tarjeta navegacion-pagina" aria-label="Navegación entre temas">
+<p><a href="JS8.html">← Anterior: Funciones</a></p>
+<p><a href="JS10.html">Siguiente: Prompt →</a></p>
+<p><a href="index.html">Regresar al inicio</a> · <a href="Temas.html">Ver todos los temas</a></p>
+</nav>
+</main>
+
+<footer class="pie">
+  <p>Construye Aplicaciones Web · Material de estudio</p>
+  <p><a href="index.html">Inicio</a> · <a href="Temas.html">Temario</a> · <a href="Requisitos.html">Requisitos</a></p>
+</footer>
+</body>
+</html>

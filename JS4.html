@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="favicon.ico">
+<link rel="stylesheet" href="css/estilos.css">
+<title>4. Conversión de datos y estructuras de control</title>
+    <meta name="description" content="Construye Aplicaciones Web: material de estudio sobre HTML, CSS y JavaScript.">
+    <script src="js/app.js" defer></script>
+</head>
+<body>
+<a class="enlace-salto" href="#contenido">Saltar al contenido</a>
+<header class="encabezado">
+<nav class="barra-navegacion" aria-label="Navegación principal">
+  <button class="boton-menu" type="button" aria-expanded="false" aria-controls="menu">☰ Menú</button>
+  <div class="enlaces" id="menu">
+    <a href="index.html">Inicio</a>
+    <a href="Temas.html">Temario</a>
+    <a href="JS3.html">Anterior</a>
+    <a href="JS5.html">Siguiente</a>
+    <a href="JS.html">JavaScript</a>
+    <a href="Requisitos.html">Requisitos</a>
+  </div>
+</nav>
+<h1>4. Conversión de datos y estructuras de control</h1>
+</header>
+
+<main id="contenido" class="contenedor">
+<section class="tarjeta"><h2>¿Qué es?</h2><p>La conversión de datos consiste en transformar un valor de un tipo a otro, por ejemplo, de texto a número. Las estructuras de control determinan qué instrucciones se ejecutan y cuántas veces.</p><h2>¿Para qué sirve?</h2><p>Sirven para interpretar correctamente los datos ingresados y para que el programa tome decisiones o repita instrucciones.</p></section>
+<h2>Elementos y tipos principales</h2>
+<div class="tabla-scroll"><table><tr><th scope="col">Elemento o tipo</th><th scope="col">Definición y uso</th></tr><tr><td><strong>Number(valor)</strong></td><td>Convierte un valor a número. Por ejemplo, Number(&#x27;25&#x27;) produce 25. Si no puede convertirlo, devuelve NaN.</td></tr><tr><td><strong>parseInt(valor)</strong></td><td>Obtiene un número entero desde el inicio de una cadena.</td></tr><tr><td><strong>parseFloat(valor)</strong></td><td>Obtiene un número que puede incluir decimales.</td></tr><tr><td><strong>String(valor)</strong></td><td>Convierte un valor a texto.</td></tr><tr><td><strong>Boolean(valor)</strong></td><td>Convierte un valor a true o false.</td></tr><tr><td><strong>if / else</strong></td><td>Ejecuta un bloque si una condición es verdadera y otro si es falsa.</td></tr><tr><td><strong>for / while / do...while</strong></td><td>Permiten repetir instrucciones mientras se cumplan las condiciones correspondientes.</td></tr></table></div>
+<h2>Ejemplo de código</h2><p>Este ejemplo muestra cómo se utiliza el tema en JavaScript. Puedes copiarlo y probarlo en un archivo HTML.</p>
+<pre><code>let texto = &quot;18&quot;;
+let numero = Number(texto);
+
+if (numero &gt;= 18) {
+    document.write(&quot;Es mayor de edad&quot;);
+} else {
+    document.write(&quot;Es menor de edad&quot;);
+}
+
+for (let i = 1; i &lt;= 3; i++) {
+    document.write(&quot;&lt;br&gt;Vuelta &quot; + i);
+}</code></pre>
+<h2>Ejemplo interactivo</h2><div class="demo"><label>Escribe tu edad: <input id="edadDato" type="number" min="0" value="16"></label><button onclick="let e=Number(document.getElementById('edadDato').value);document.getElementById('edadSalida').textContent=e>=18?'Eres mayor de edad.':'Eres menor de edad.'">Comprobar</button><p id="edadSalida"></p></div>
+<div class="nota"><strong>Recuerda:</strong> guarda tus archivos con extensión .html y abre el archivo en un navegador para ejecutar los ejemplos.</div>
+
+<nav class="tarjeta navegacion-pagina" aria-label="Navegación entre temas">
+<p><a href="JS3.html">← Anterior: Tipos de operadores</a></p>
+<p><a href="JS5.html">Siguiente: JavaScript en HTML →</a></p>
+<p><a href="index.html">Regresar al inicio</a> · <a href="Temas.html">Ver todos los temas</a></p>
+</nav>
+</main>
+
+<footer class="pie">
+  <p>Construye Aplicaciones Web · Material de estudio</p>
+  <p><a href="index.html">Inicio</a> · <a href="Temas.html">Temario</a> · <a href="Requisitos.html">Requisitos</a></p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="favicon.ico">
+<link rel="stylesheet" href="css/estilos.css">
+<title>10. Prompt en JavaScript</title>
+    <meta name="description" content="Construye Aplicaciones Web: material de estudio sobre HTML, CSS y JavaScript.">
+    <script src="js/app.js" defer></script>
+</head>
+<body>
+<a class="enlace-salto" href="#contenido">Saltar al contenido</a>
+<header class="encabezado">
+<nav class="barra-navegacion" aria-label="Navegación principal">
+  <button class="boton-menu" type="button" aria-expanded="false" aria-controls="menu">☰ Menú</button>
+  <div class="enlaces" id="menu">
+    <a href="index.html">Inicio</a>
+    <a href="Temas.html">Temario</a>
+    <a href="JS9.html">Anterior</a>
+    <a href="Temas.html">Siguiente</a>
+    <a href="JS.html">JavaScript</a>
+    <a href="Requisitos.html">Requisitos</a>
+  </div>
+</nav>
+<h1>10. Prompt en JavaScript</h1>
+</header>
+
+<main id="contenido" class="contenedor">
+<section class="tarjeta"><h2>¿Qué es?</h2><p>prompt() es un método del objeto window que muestra un cuadro de diálogo para pedir al usuario que escriba un dato. Devuelve el texto ingresado o null si se cancela.</p><h2>¿Para qué sirve?</h2><p>Se utiliza para solicitar datos sencillos, como un nombre o una cantidad. El resultado normalmente debe convertirse si se necesita realizar operaciones matemáticas.</p></section>
+<h2>Elementos y tipos principales</h2>
+<div class="tabla-scroll"><table><tr><th scope="col">Elemento o tipo</th><th scope="col">Definición y uso</th></tr><tr><td><strong>prompt(mensaje)</strong></td><td>Muestra el mensaje y permite escribir una respuesta.</td></tr><tr><td><strong>Valor devuelto</strong></td><td>Devuelve una cadena de texto o null si el usuario cancela.</td></tr><tr><td><strong>Number()</strong></td><td>Convierte el texto recibido a número para realizar cálculos.</td></tr><tr><td><strong>Validación</strong></td><td>Conviene comprobar que el usuario no haya cancelado ni dejado el campo vacío y que el dato sea válido.</td></tr></table></div>
+<h2>Ejemplo de código</h2><p>Este ejemplo muestra cómo se utiliza el tema en JavaScript. Puedes copiarlo y probarlo en un archivo HTML.</p>
+<pre><code>let nombre = prompt(&quot;¿Cómo te llamas?&quot;);
+
+if (nombre !== null &amp;&amp; nombre.trim() !== &quot;&quot;) {
+    alert(&quot;Hola, &quot; + nombre);
+} else {
+    alert(&quot;No escribiste un nombre.&quot;);
+}
+
+let edadTexto = prompt(&quot;¿Cuántos años tienes?&quot;);
+let edad = Number(edadTexto);
+
+if (edadTexto !== null &amp;&amp; edadTexto.trim() !== &quot;&quot; &amp;&amp; Number.isFinite(edad)) {
+    alert(&quot;El próximo año tendrás &quot; + (edad + 1));
+}</code></pre>
+<h2>Ejemplo interactivo</h2><div class="demo"><button onclick="let nombre=prompt('¿Cómo te llamas?');document.getElementById('promptSalida').textContent=(nombre!==null&&nombre.trim()!=='')?'Hola, '+nombre+'. El método prompt recibió tu nombre.':'No se ingresó un nombre.'">Probar prompt()</button><p id="promptSalida">El resultado aparecerá aquí después de aceptar el cuadro de diálogo.</p></div>
+<div class="nota"><strong>Recuerda:</strong> guarda tus archivos con extensión .html y abre el archivo en un navegador para ejecutar los ejemplos.</div>
+
+<nav class="tarjeta navegacion-pagina" aria-label="Navegación entre temas">
+<p><a href="JS9.html">← Anterior: Tipos de funciones</a></p>
+<p><a href="Temas.html">Siguiente: Temario →</a></p>
+<p><a href="index.html">Regresar al inicio</a> · <a href="Temas.html">Ver todos los temas</a></p>
+</nav>
+</main>
+
+<footer class="pie">
+  <p>Construye Aplicaciones Web · Material de estudio</p>
+  <p><a href="index.html">Inicio</a> · <a href="Temas.html">Temario</a> · <a href="Requisitos.html">Requisitos</a></p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Construye Aplicaciones Web: material de estudio sobre HTML, CSS y JavaScript.">
+
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/app.js" defer></script>
+
+    <title>Requisitos del proyecto</title>
+</head>
+
+<body>
+<a class="enlace-salto" href="#contenido">Saltar al contenido</a>
+<header class="encabezado">
+<nav class="barra-navegacion" aria-label="Navegación principal">
+  <button class="boton-menu" type="button" aria-expanded="false" aria-controls="menu">☰ Menú</button>
+  <div class="enlaces" id="menu">
+    <a href="index.html">Inicio</a>
+    <a href="Temas.html">Temario</a>
+    <a href="JS.html">JavaScript</a>
+    <a href="Requisitos.html" aria-current="page">Requisitos</a>
+  </div>
+</nav>
+<h1>REQUISITOS DEL PROYECTO</h1>
+</header>
+
+<main id="contenido" class="contenedor">
+<section>
+<h2>Requisitos de la aplicación web</h2>
+<p>Esta tabla resume los 11 requisitos del proyecto, su valor y dónde puedes comprobarlos.</p>
+<div class="tabla-scroll">
+<table>
+    <caption>Rúbrica del proyecto (100 puntos)</caption>
+    <thead>
+        <tr><th scope="col">No.</th><th scope="col">Requisito</th><th scope="col">Puntos</th><th scope="col">Cómo se cumple</th><th scope="col">Dónde verlo</th></tr>
+    </thead>
+    <tbody>
+        <tr><td>1</td><th scope="row">Etiquetas semánticas</th><td>10</td><td>Todas las páginas usan <code>header</code>, <code>nav</code>, <code>main</code>, <code>section</code> y <code>footer</code>.</td><td><a href="index.html">Inicio</a>, <a href="Etiquetas.html">Etiquetas</a></td></tr>
+        <tr><td>2</td><th scope="row">Diseño responsivo</th><td>10</td><td>Menú que se pliega en celular, cuadrículas flexibles, tablas con desplazamiento propio y consultas de medios.</td><td><a href="index.html">Inicio</a>, <a href="Temas.html">Temario</a></td></tr>
+        <tr><td>3</td><th scope="row">Estilos (CSS)</th><td>10</td><td>Hoja externa <code>css/estilos.css</code> con variables de color, tipografía y márgenes coherentes.</td><td><a href="CSS.html">CSS</a></td></tr>
+        <tr><td>4</td><th scope="row">Imágenes</th><td>9</td><td>Imágenes con <code>alt</code>, ancho y alto definidos y carga diferida; sin enlaces rotos.</td><td><a href="index.html">Inicio</a>, <a href="Hipervínculos.html">Hipervínculos</a></td></tr>
+        <tr><td>5</td><th scope="row">Hipervínculos</th><td>9</td><td>Enlaces internos y externos, imagen como enlace y navegación entre temas.</td><td><a href="Hipervínculos.html">Hipervínculos</a></td></tr>
+        <tr><td>6</td><th scope="row">Listas</th><td>8</td><td>Listas ordenadas, desordenadas, de definición y anidadas.</td><td><a href="Listass.html">Listas</a></td></tr>
+        <tr><td>7</td><th scope="row">Tablas</th><td>9</td><td>Tablas con <code>caption</code>, <code>thead</code>, <code>tbody</code>, <code>tfoot</code> y encabezados con <code>scope</code>.</td><td><a href="TABLAS.html">Tablas</a></td></tr>
+        <tr><td>8</td><th scope="row">Formularios</th><td>9</td><td>Formulario con <code>label</code>, campos de varios tipos, validación y botón de envío.</td><td><a href="Formularios.html">Formularios</a></td></tr>
+        <tr><td>9</td><th scope="row">Videos</th><td>8</td><td>Video con controles, póster y texto alternativo, además de un audio.</td><td><a href="index.html">Inicio</a></td></tr>
+        <tr><td>10</td><th scope="row">Alertas</th><td>9</td><td>Mensajes de éxito, error, aviso e información al enviar el formulario y al pulsar botones.</td><td><a href="Formularios.html">Formularios</a>, <a href="Temas2.html">Otros temas</a></td></tr>
+        <tr><td>11</td><th scope="row">Orden y buenas prácticas</th><td>9</td><td>Código indentado, archivos separados en las carpetas <code>css</code>, <code>js</code>, <code>img</code> y <code>media</code>, sin enlaces rotos.</td><td>Estructura del proyecto</td></tr>
+    </tbody>
+    <tfoot>
+        <tr><td colspan="2">Total</td><td>100</td><td colspan="2">100 puntos</td></tr>
+    </tfoot>
+</table>
+</div>
+</section>
+
+<section>
+<h2>Estructura de carpetas</h2>
+<pre><code>MODULO3/
+├── index.html
+├── Temas.html, Temas2.html, Requisitos.html
+├── HTML.html, CSS.html, Etiquetas.html, Listass.html
+├── TABLAS.html, Hipervínculos.html, Formularios.html, Examen.html
+├── JS.html … JS10.html
+├── favicon.ico
+├── css/estilos.css
+├── js/app.js
+├── img/1.jpg, poster-video.jpg
+└── media/WEB.mp4, AAA.mpeg</code></pre>
+</section>
+
+<section>
+<h2>Observaciones del evaluador</h2>
+<div class="nota">Espacio para comentarios: anota aquí las observaciones y la calificación final (___ / 100).</div>
+</section>
+
+<nav class="tarjeta navegacion-pagina" aria-label="Navegación entre temas">
+<p><a href="Temas.html">Regresar a Temas</a></p>
+<p><a href="index.html">Regresar al inicio</a> · <a href="Temas.html">Ver todos los temas</a></p>
+</nav>
+</main>
+
+<footer class="pie">
+  <p>Construye Aplicaciones Web · Material de estudio</p>
+  <p><a href="index.html">Inicio</a> · <a href="Temas.html">Temario</a> · <a href="Requisitos.html">Requisitos</a></p>
+</footer>
+</body>
+</html>

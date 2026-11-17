@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="favicon.ico">
+<link rel="stylesheet" href="css/estilos.css">
+<title>7. Método DOM</title>
+    <meta name="description" content="Construye Aplicaciones Web: material de estudio sobre HTML, CSS y JavaScript.">
+    <script src="js/app.js" defer></script>
+</head>
+<body>
+<a class="enlace-salto" href="#contenido">Saltar al contenido</a>
+<header class="encabezado">
+<nav class="barra-navegacion" aria-label="Navegación principal">
+  <button class="boton-menu" type="button" aria-expanded="false" aria-controls="menu">☰ Menú</button>
+  <div class="enlaces" id="menu">
+    <a href="index.html">Inicio</a>
+    <a href="Temas.html">Temario</a>
+    <a href="JS6.html">Anterior</a>
+    <a href="JS8.html">Siguiente</a>
+    <a href="JS.html">JavaScript</a>
+    <a href="Requisitos.html">Requisitos</a>
+  </div>
+</nav>
+<h1>7. Método DOM</h1>
+</header>
+
+<main id="contenido" class="contenedor">
+<section class="tarjeta"><h2>¿Qué es?</h2><p>DOM significa Document Object Model (Modelo de Objetos del Documento). El navegador representa el documento HTML como una estructura de objetos que JavaScript puede consultar y modificar.</p><h2>¿Para qué sirve?</h2><p>El DOM permite cambiar textos, atributos, estilos y elementos; también permite crear o eliminar contenido y responder a eventos.</p></section>
+<h2>Elementos y tipos principales</h2>
+<div class="tabla-scroll"><table><tr><th scope="col">Elemento o tipo</th><th scope="col">Definición y uso</th></tr><tr><td><strong>getElementById()</strong></td><td>Busca el elemento que tiene un id específico.</td></tr><tr><td><strong>querySelector()</strong></td><td>Devuelve el primer elemento que coincide con un selector CSS.</td></tr><tr><td><strong>querySelectorAll()</strong></td><td>Devuelve una colección de todos los elementos que coinciden.</td></tr><tr><td><strong>textContent</strong></td><td>Lee o cambia el texto de un elemento.</td></tr><tr><td><strong>innerHTML</strong></td><td>Lee o cambia el contenido HTML interno. Debe usarse con cuidado si el contenido proviene de usuarios.</td></tr><tr><td><strong>style</strong></td><td>Permite modificar estilos directamente.</td></tr><tr><td><strong>addEventListener()</strong></td><td>Registra una función que se ejecuta cuando ocurre un evento.</td></tr></table></div>
+<h2>Ejemplo de código</h2><p>Este ejemplo muestra cómo se utiliza el tema en JavaScript. Puedes copiarlo y probarlo en un archivo HTML.</p>
+<pre><code>const titulo = document.getElementById(&quot;titulo&quot;);
+titulo.textContent = &quot;Nuevo título&quot;;
+titulo.style.color = &quot;blue&quot;;
+
+const parrafos = document.querySelectorAll(&quot;.nota&quot;);
+parrafos.forEach(function(p) {
+    p.style.backgroundColor = &quot;#e2edf8&quot;;
+});</code></pre>
+<h2>Ejemplo interactivo</h2><div class="demo"><h3 id="tituloDOM">Texto original</h3><input id="textoDOM" value="Aprendiendo DOM"><button onclick="document.getElementById('tituloDOM').textContent=document.getElementById('textoDOM').value;document.getElementById('tituloDOM').style.color='#245b91'">Actualizar con DOM</button></div>
+<div class="nota"><strong>Recuerda:</strong> guarda tus archivos con extensión .html y abre el archivo en un navegador para ejecutar los ejemplos.</div>
+
+<nav class="tarjeta navegacion-pagina" aria-label="Navegación entre temas">
+<p><a href="JS6.html">← Anterior: Estructura switch</a></p>
+<p><a href="JS8.html">Siguiente: Funciones →</a></p>
+<p><a href="index.html">Regresar al inicio</a> · <a href="Temas.html">Ver todos los temas</a></p>
+</nav>
+</main>
+
+<footer class="pie">
+  <p>Construye Aplicaciones Web · Material de estudio</p>
+  <p><a href="index.html">Inicio</a> · <a href="Temas.html">Temario</a> · <a href="Requisitos.html">Requisitos</a></p>
+</footer>
+</body>
+</html>
